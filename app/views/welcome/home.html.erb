@@ -1,0 +1,163 @@
+<div class="bg-img">
+  <!-- <header> -->
+  <nav class="navbar navbar-inverse head">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle hamburger" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand-center" href="#"> <%= image_tag "logo.png", size: "60x60", alt: "V-shaped-logo" %> </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class=""> <%= link_to "Signup/Login", new_customer_path, id: "profile" %> </li>
+          <li class=""><a href="#" data-toggle="modal" data-target="#myModal">Menu</a></li>
+          <li class=""><a href="#" id="plans">Plans & Pricing</a></li>
+          <!-- <li class=""><a href="#" id="mission">The Mission</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of header  -->
+
+  <!-- Top Section-->
+  <div class="container-fluid top-sec">
+    <div class="row bb-backdrop">
+      <h2 class="text-center bb-name">Brussel Brand</h2>
+      <h3 class="text-center bb-name2">Live Smart, Eat Healthy, Save Money.</h3><br>
+      <div class="text-center"><button type="button" class="btn" id="mid-sec-scroll">Learn More</button></div>
+      <div class="container-fluid text-center how-it-works">
+        <h2 class="steps">How it works</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <i class="fas fa-utensils fa-7x"></i>
+            <h4 class="each-step">Sign Up</h4><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-sm-4">
+            <i class="fas fa-shopping-basket fa-7x"></i>
+            <h4 class="each-step">Choose a Plan</h4><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-sm-4">
+            <i class="fas fa-child fa-7x"></i>
+            <h4 class="each-step">Enjoy</h4><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end of top section -->
+
+<!-- closing div to bg image -->
+  </div>
+<!-- closing div to bg image -->
+
+
+<!-- mid section -->
+<div class="container-fluid" id="mid-section">
+
+  <div class="section"></div>
+
+  <div class="row text-center" id="1st-section">
+    <div class="col-sm-6">
+      <i class="fas fa-heartbeat fa-7x"></i>
+    </div>
+    <div class="col-sm-6">
+      <h2 class="mid-sec-1">100% Vegan</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="section"></div>
+
+  <div class="row text-center" id="2nd-section">
+    <div class="col-sm-6">
+      <h2 class="mid-sec-1">100% Fresh</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-sm-6">
+      <i class="fas fa-heartbeat fa-7x"></i>
+    </div>
+  </div>
+
+  <div class="section"></div>
+
+  <div class="row text-center" id="3rd-section">
+    <div class="col-sm-6">
+      <i class="fas fa-heartbeat fa-7x"></i>
+    </div>
+    <div class="col-sm-6">
+      <h2 class="mid-sec-1">100% Authentic</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+<!-- end of midsection -->
+
+<!-- carousel modal -->
+<div id="myModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">This Week's Meals</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- menu carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+               <%= image_tag "menu.png", class: "img-responsive center-block", alt: "menu description" %>
+              <div class="carousel-caption">
+                <!-- <h1>This Week's Meals</h1> -->
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                <br>
+              </div>
+            </div>
+            <div class="item">
+              <%= image_tag "ricebowl.png", class: "img-responsive center-block", alt: "bowl of rice" %>
+              <div class="carousel-caption">
+                <h2>Ricebowl</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <div class="item">
+              <%= image_tag "new_buffalo.jpg", class: "img-responsive center-block", alt: "cauliflower on salad" %>
+              <div class="carousel-caption">
+                <h2>Buffalo Cauliflower</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <!--carousel slide controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <!-- end of carousel -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Place Order</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of modal for carousel -->

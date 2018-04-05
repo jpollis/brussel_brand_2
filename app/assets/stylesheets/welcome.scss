@@ -1,0 +1,171 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// .nav-wrapper {
+//   background-color: white;
+// }
+
+// for dark dim overlay
+html, body {
+  min-height: 100%;
+}
+body {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+// end overlay
+.bg-img {
+  background-image: url("veggies.jpg");
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  color: white;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
+}
+
+.navbar-right {
+  font-size: 1.2em;
+}
+
+.navbar-brand {
+  float: left;
+  // min-height: 55px;
+  padding: 0 15px 5px;
+  // color: white;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  color: black;
+}
+
+
+#profile:hover, #meals:hover, #plans:hover, #mission:hover {
+  color: black;
+}
+
+.hamburger {
+  background-color: black !important;
+}
+
+
+
+.head {
+  margin-bottom: 0em !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white !important;
+  border-color: white !important;
+}
+
+
+// .navbar-inverse .navbar-nav li a {
+//   color: #D5D5D5;
+// }
+
+.carousel-caption {
+  // top: 50%;
+  // transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+
+.btn {
+  font-size: 18px;
+  color: #FFF;
+  padding: 12px 22px;
+  background: green;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.bb-backdrop {
+  margin-top: 0em;
+  padding-top: 15em;
+  padding-bottom: 15em;
+}
+
+.top-sec {
+  background-color: black;
+  opacity: 0.8;
+}
+
+#mid-section {
+  // margin-top: 10em;
+  // background-color: lightgray;
+}
+
+div#1st-section.row.text-center {
+  padding-top: 10em !important;
+}
+
+// .mid-sec-1 {
+//   vertical-align: center;
+// }
+
+.bb-name {
+  font-family: 'Yellowtail', cursive;
+  font-size: 100px;
+  color: white;
+}
+
+.btn .learn {
+  background: green;
+}
+
+.logo {
+  width: 4.8em;
+}
+
+.section {
+  padding-bottom: 10em !important;
+}
+
+.veggies {
+  width: 100%;
+}
+
+.veg-pic {
+  width: 100%
+}
+
+.options {
+  margin-top: -12em;
+  position: relative;
+}
+
+.steps {
+  margin-bottom: 2em;
+  font-size: 55px;
+}
+
+.each-step {
+  font-size: 30px;
+  color: green;
+}
+
+.how-it-works {
+  padding-top: 10em;
+  padding-bottom: 10em;
+  color: lightgray;
+}
+
+@media screen and (max-width: 400px) {
+    .bb-name {
+      font-size: 60px;
+    }
+}
