@@ -12,7 +12,11 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class=""> <%= link_to "Signup/Login", new_customer_path, id: "profile" %> </li>
+          <% unless customer_signed_in? %>
+          <li class=""> <%= link_to "Signup/Login", new_customer_session_path, id: "profile" %> </li>
+          <% else %>
+          <li class=""> <%= link_to "Log Out", 'customers/sign_out', id: "profile" %> </li>
+          <% end %>
           <li class=""><a href="#" data-toggle="modal" data-target="#myModal">Menu</a></li>
           <li class=""><a href="#" id="plans">Plans & Pricing</a></li>
           <!-- <li class=""><a href="#" id="mission">The Mission</a></li> -->
@@ -64,34 +68,28 @@
   <div class="section"></div>
 
   <div class="row text-center" id="1st-section">
-    <div class="col-sm-6">
-      <i class="fas fa-heartbeat fa-7x"></i>
-    </div>
-    <div class="col-sm-6">
+    <div class="col-sm-4">
+      <i class="fas fa-heartbeat fa-3x"></i>
       <h2 class="mid-sec-1">100% Vegan</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-  </div>
+  <!-- </div> -->
 
   <div class="section"></div>
 
-  <div class="row text-center" id="2nd-section">
-    <div class="col-sm-6">
+  <!-- <div class="row text-center" id="2nd-section"> -->
+    <div class="col-sm-4">
+      <i class="fas fa-heartbeat fa-3x"></i>
       <h2 class="mid-sec-1">100% Fresh</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="col-sm-6">
-      <i class="fas fa-heartbeat fa-7x"></i>
-    </div>
-  </div>
+  <!-- </div> -->
 
   <div class="section"></div>
 
-  <div class="row text-center" id="3rd-section">
-    <div class="col-sm-6">
-      <i class="fas fa-heartbeat fa-7x"></i>
-    </div>
-    <div class="col-sm-6">
+  <!-- <div class="row text-center" id="3rd-section"> -->
+    <div class="col-sm-4">
+      <i class="fas fa-heartbeat fa-3x"></i>
       <h2 class="mid-sec-1">100% Authentic</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>

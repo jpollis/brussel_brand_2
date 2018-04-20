@@ -1,6 +1,7 @@
 class CustomersController < ApplicationController
   before_action :set_customer, only: [:show, :edit, :update, :destroy]
 
+
   # GET /customers
   # GET /customers.json
   def index
@@ -10,6 +11,8 @@ class CustomersController < ApplicationController
   # GET /customers/1
   # GET /customers/1.json
   def show
+    @plan = Plan.all
+    @customers = Customer.find(params[:id]).email
   end
 
   # GET /customers/new
@@ -71,4 +74,5 @@ class CustomersController < ApplicationController
     def customer_params
       params.fetch(:customer, {})
     end
+
 end

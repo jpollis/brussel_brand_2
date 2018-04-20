@@ -11,6 +11,16 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= form.label "Meals Per Week" %>
+    <%= form.text_field :number, id: :plan_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :plan_price %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
